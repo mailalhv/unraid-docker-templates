@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL>https://github.com/mailalhv/unraid-docker-templates/blob/247645530bc2858fdf4d27002133297527cea5f9/PostgreSQL-14.xml</TemplateURL>
+  <TemplateURL>https://github.com/mailalhv/unraid-docker-templates/blob/master/PostgreSQL-14.xml</TemplateURL>
   <Date>2022-01-11</Date>
   <Beta>False</Beta>
   <Category>Network:Management Productivity: Tools:</Category>
