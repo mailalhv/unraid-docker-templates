@@ -4,7 +4,7 @@
   <Date>2022-01-11</Date>
   <Beta>False</Beta>
   <Category>Network:Management Productivity: Tools:</Category>
-  <Name>postgresql-14</Name>
+  <Name>postgresql-latest</Name>
   <Project>https://www.postgresql.org/</Project>
   <Overview>
     PostgreSQL also known as Postgres, is a free and open-source relational database management system. 
