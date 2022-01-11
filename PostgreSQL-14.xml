@@ -13,7 +13,7 @@
   </Overview>
   <Registry>https://registry.hub.docker.com/_/postgres/</Registry>
   <GitHub>https://github.com/docker-library/postgres</GitHub>
-  <Repository>registry.hub.docker.com/library/postgres:14.1</Repository>
+  <Repository>registry.hub.docker.com/library/postgres:14</Repository>
   <Support>n/a</Support>
   <WebUI/>
   <Banner>https://wiki.postgresql.org/images/f/f2/PostgreSQL.Vertical_Banner.blue.120x600.gif</Banner>
