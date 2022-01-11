@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TimescaleDB</Name>
+  <Repository>timescale/timescaledb:latest-pg14</Repository>
+  <Registry>https://hub.docker.com/r/timescale/timescaledb</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/timescale/timescaledb-docker</Support>
+  <Project>https://github.com/timescale/timescaledb</Project>
+  <Overview>
+    TimescaleDB is an open-source database designed to make SQL scalable for time-series data. 
+    It is engineered up from PostgreSQL and packaged as a PostgreSQL extension, 
+    providing automatic partitioning across time and space (partitioning key), as well as full SQL support.
+  </Overview>
+  <Category>Productivity: Tools:</Category>
+  <Icon>https://blog.timescale.com/assets/header-logo.svg?v=384e54b323</Icon>
+  <Config Name="Password for postgres role" Target="POSTGRES_PASSWORD" Default="postgres" Mode="" Description="Container Variable: POSTGRES_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Data directory" Target="/var/lib/postgresql/data" Default="/mnt/user/appdata/timescaledb" Mode="rw" Description="Container Path: /var/lib/postgresql/data" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database port" Target="5432" Default="5432" Mode="tcp" Description="Container Port: 5432 --PostgreSQL Port. Beware! This port may already be in use. Choose another port-number if the add-on won't start." Type="Port" Display="always" Required="true" Mask="false"/>
+</Container>
