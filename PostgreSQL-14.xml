@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <TemplateURL>https://github.com/mailalhv/unraid-docker-templates/blob/247645530bc2858fdf4d27002133297527cea5f9/PostgreSQL-14.xml</TemplateURL>
+  <Date>2022-01-11</Date>
+  <Beta>False</Beta>
+  <Category>Network:Management Productivity: Tools:</Category>
+  <Name>postgresql-14</Name>
+  <Project>https://www.postgresql.org/</Project>
+  <Overview>
+    PostgreSQL also known as Postgres, is a free and open-source relational database management system. 
+    Official Postgres Docker image @ https://hub.docker.com/_/postgres/ is used.
+    [br]
+  </Overview>
+  <Registry>https://registry.hub.docker.com/_/postgres/</Registry>
+  <GitHub>https://github.com/docker-library/postgres</GitHub>
+  <Repository>registry.hub.docker.com/library/postgres:latest</Repository>
+  <Support>n/a</Support>
+  <WebUI/>
+  <Banner>https://wiki.postgresql.org/images/f/f2/PostgreSQL.Vertical_Banner.blue.120x600.gif</Banner>
+  <Icon>https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png</Icon>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="Initial superuser password (required)" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="POSTGRES_DB" Target="POSTGRES_DB" Default="" Mode="" Description="Initial database name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Type="Path" Name="Database Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql14" Mode="rw" Display="always" Required="true" Description="PostgreSQL data storage location"/>
+  <Config Type="Port" Name="PostgreSQL access port" Target="5432" Default="5432" Mode="tcp" Display="always-hide" Required="true" Description="PostgreSQL TCP connection port"/>
+</Container>
